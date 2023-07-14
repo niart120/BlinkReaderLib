@@ -16,8 +16,10 @@
 
         public Bitmap CaptureScreen()
         {
-            var top = Top + 34;
-            var left = Left + 11;
+            var point = this.PointToScreen(pictureBox1.Location);
+            var left = point.X;
+            var top = point.Y;
+
             var height = pictureBox1.Size.Height;
             var width = pictureBox1.Size.Width;
 
@@ -34,10 +36,10 @@
             }
         }
 
-        // フォームの破棄をキャンセルして不可視化する.
+        // フォームの破棄をキャンセルする.
         private void CaptureWindowForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            //e.Cancel = true;
+            e.Cancel = true;
             //this.Visible = false;
         }
     }
