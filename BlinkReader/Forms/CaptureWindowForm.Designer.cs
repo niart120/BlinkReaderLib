@@ -39,7 +39,7 @@
             pictureBox1.Location = new Point(6, 8);
             pictureBox1.Margin = new Padding(6, 8, 6, 8);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(423, 416);
+            pictureBox1.Size = new Size(43, 40);
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
@@ -48,17 +48,18 @@
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
-            ClientSize = new Size(436, 432);
+            ClientSize = new Size(56, 56);
             Controls.Add(pictureBox1);
             FormBorderStyle = FormBorderStyle.SizableToolWindow;
             Margin = new Padding(6, 8, 6, 8);
             MaximizeBox = false;
             MaximumSize = new Size(951, 964);
             MinimizeBox = false;
-            MinimumSize = new Size(188, 151);
+            MinimumSize = new Size(82, 127);
             Name = "CaptureWindowForm";
             ShowIcon = false;
             Text = "キャプチャフレーム";
+            TopMost = true;
             FormClosing += CaptureWindowForm_FormClosing;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
